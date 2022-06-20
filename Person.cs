@@ -6,4 +6,10 @@ class Person {
         get { return myVar; }
         set { myVar = value; }
     }
+
+    public int Naam { get; private set; }
+    
+    public void Naa() {
+        this.Naam = 120;
+    }
 }
