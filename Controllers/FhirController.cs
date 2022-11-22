@@ -18,11 +18,17 @@ namespace csharptest.Controllers
             ai.Patient = refe;
             ai.Criticality = AllergyIntolerance.AllergyIntoleranceCriticality.Low;
             ai.ClinicalStatus = new CodeableConcept("http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical", "inactive", "Inactive");
+            
+            var reactionComponents = new List<AllergyIntolerance.ReactionComponent>();
+            // reactionComponents.Add(new AllergyIntolerance.ReactionComponent());
+            var reaction1 = new AllergyIntolerance.ReactionComponent();
+            reaction1.Description = "dd";
+            reactionComponents.Add(reaction1);
+
+            ai.Reaction = reactionComponents;
 
             // var p = new Patient();
             // p.Deceased = new FhirBoolean(false);
-            var serializer = new FhirJsonSerializer();
-
             return new JsonResult(ai);
         }
     }
