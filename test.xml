@@ -1,0 +1,29 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Header>
+        <h:LoginHeader xmlns:h="Verklizan/Webservice" xmlns="Verklizan/Webservice" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Password>shhhhh</Password>
+            <Username>donttellanyone</Username>
+        </h:LoginHeader>
+    </s:Header>
+    <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <PutAlarm xmlns="Verklizan/Webservice">
+            <xmlMessage>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;
+&lt;Command xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
+    &lt;Alarm&gt;
+        &lt;Sender&gt;Medimo&lt;/Sender&gt;
+        &lt;Criterium&gt;589&lt;/Criterium&gt;
+        &lt;Voice&gt;False&lt;/Voice&gt;
+        &lt;Remark&gt;Carinova Thuiszorg - id: 4954896&lt;/Remark&gt;
+        &lt;Device&gt;
+            &lt;DeviceID&gt;451500&lt;/DeviceID&gt;
+        &lt;/Device&gt;
+        &lt;AlarmURL&gt;
+            &lt;Url&gt;https://secure.medimo.nl/aq/4954896&lt;/Url&gt;
+            &lt;DisplayName&gt;Medimo controle&lt;/DisplayName&gt;
+            &lt;Type&gt;Medical&lt;/Type&gt;
+        &lt;/AlarmURL&gt;
+    &lt;/Alarm&gt;
+&lt;/Command&gt;</xmlMessage>
+        </PutAlarm>
+    </s:Body>
+</s:Envelope>

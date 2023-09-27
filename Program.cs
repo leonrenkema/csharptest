@@ -1,26 +1,36 @@
-var builder = WebApplication.CreateBuilder(args);
+﻿// See https://aka.ms/new-console-template for more information
+Console.WriteLine("Hello, World!");
 
-// Add services to the container.
-builder.Services.AddRazorPages();
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+var lijst = new List<Person>
 {
-    app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+    new Person()
+    {
+        Age = 10,
+        Name = "Leon"
+    },
+    new Person()
+    {
+        Age = 25,
+        Name = "Sjaak"
+    }
+};
+
+var collection = from l in lijst
+            where l.Age > 9
+            where l.Age < 20
+            select l;
+
+foreach (var item in collection)
+{
+    Console.WriteLine(item);    
 }
 
+internal class Person
+{
+    public int Id { get; set; }
+    public int Age { get; set; }
+    public string Name { get; set; } = string.Empty;
 
-app.UseHttpsRedirection();
-app.UseStaticFiles();
+    override public string ToString() => $"{Name} {Age}";
+}
 
-app.UseRouting();
-
-app.UseAuthorization();
-
-app.MapRazorPages();
-
-app.Run();

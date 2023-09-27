@@ -1,0 +1,15 @@
+/workspaces/csharptest/bin/Debug/net7.0/csharptest
+/workspaces/csharptest/bin/Debug/net7.0/csharptest.deps.json
+/workspaces/csharptest/bin/Debug/net7.0/csharptest.runtimeconfig.json
+/workspaces/csharptest/bin/Debug/net7.0/csharptest.dll
+/workspaces/csharptest/bin/Debug/net7.0/csharptest.pdb
+/workspaces/csharptest/obj/Debug/net7.0/csharptest.csproj.AssemblyReference.cache
+/workspaces/csharptest/obj/Debug/net7.0/csharptest.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/csharptest/obj/Debug/net7.0/csharptest.AssemblyInfoInputs.cache
+/workspaces/csharptest/obj/Debug/net7.0/csharptest.AssemblyInfo.cs
+/workspaces/csharptest/obj/Debug/net7.0/csharptest.csproj.CoreCompileInputs.cache
+/workspaces/csharptest/obj/Debug/net7.0/csharptest.dll
+/workspaces/csharptest/obj/Debug/net7.0/refint/csharptest.dll
+/workspaces/csharptest/obj/Debug/net7.0/csharptest.pdb
+/workspaces/csharptest/obj/Debug/net7.0/csharptest.genruntimeconfig.cache
+/workspaces/csharptest/obj/Debug/net7.0/ref/csharptest.dll
